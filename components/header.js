@@ -9,6 +9,7 @@ class Header extends HTMLElement {
     .logo-section {
       width: 980px;
       margin-inline: auto;
+      padding-top: 10px;
   }
   
   #logo {
@@ -25,12 +26,14 @@ class Header extends HTMLElement {
   }
   
   .navbar {
-      width: 980px;
+      width: 940px;
       margin-inline: auto;
       display: flex;
       justify-content: space-between;
       height: 44px;
       align-items: center;
+      padding-inline: 20px;
+      padding-bottom: 15px;
   }
   
   .navbar ul {
@@ -59,6 +62,7 @@ class Header extends HTMLElement {
   .right-list li:first-child {
       color: rgb(105, 105, 105);
       font-weight: 100;
+      font-size: 14px;
   }
     </style>
     <div class="logo-section">

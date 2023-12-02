@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Helvetica-W02-Roman";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b56b944e-bbe0-4450-a241-de2125d3e682.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7da02f05-ae8b-43a1-aeb9-83b3c0527c06.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/66cac56e-d017-4544-9d0c-f7d978f0c5c2.svg#66cac56e-d017-4544-9d0c-f7d978f0c5c2") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-LT-W10-Roman";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6f8d1983-4d34-4fa4-9110-988f6c495757.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7903ee3f-e9ab-4bdc-b7d2-d232de2da580.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0.svg#9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0") format("svg");
+font-display: block;
+}
+
+@font-face {
+    font-family:"Lulo-Clean-W01-One-Bold";
+    src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/aee74cb3-c913-4b54-9722-6001c92325f2.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80de9d5d-ab5f-40ce-911b-104e51e93d7c.woff") format("woff");
+font-display: block;
+}
+@font-face{
+    font-family:"Lulo-Clean-W05-One-Bold";
+    src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Lulo_Clean/v1/LuloCleanW05-OneBold.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Lulo_Clean/v1/LuloCleanW05-OneBold.woff") format("woff");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-W01-Light";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/03805817-4611-4dbc-8c65-0f73031c3973.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d5f9f72d-afb7-4c57-8348-b4bdac42edbb.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/05ad458f-263b-413f-b054-6001a987ff3e.svg#05ad458f-263b-413f-b054-6001a987ff3e") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-W02-Light";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80c34ad2-27c2-4d99-90fa-985fd64ab81a.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b8cb02c2-5b58-48d8-9501-8d02869154c2.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/92c941ea-2b06-4b72-9165-17476d424d6c.svg#92c941ea-2b06-4b72-9165-17476d424d6c") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Oswald-ExtraLight";
+    src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v16/GwZ_PiN1Aind9Eyjp868E1tXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+    url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff/s/oswald/v16/GwZ_PiN1Aind9Eyjp868Ez8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
+font-display: block;
+}
+@font-face {
+    font-family: "Oswald-ExtraLight";
+    font-weight: 700;
+    src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v16/RqRF4AQrkUh3ft98NHH2mA.woff2") format("woff2"),
+    url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff/s/oswald/v16/PyqsDANUgLi2UsdO-d4iZQ.woff") format("woff");
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752HT8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752Fj8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752Fz8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752HT8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752Fj8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752Fz8Gl-1PK62t.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 400;
+src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 400;
+src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk7yRZrPJ-M.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 400;
+src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk7yRZrPJ-M.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 400;
+src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 700;
+src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwu4DRmFqWF_ljR.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 700;
+src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwu6zRmFqWF_ljR.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 700;
+src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwu6jRmFqWF_ljR.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 700;
+src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwu5DRmFqWF_g.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWoe5j5hNKe1_w.woff2") format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWEe5j5hNKe1_w.woff2") format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWAe5j5hNKe1_w.woff2") format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-display: block;
+}
+@font-face {
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5j5hNKc.woff2") format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-display: block;
+}
+@font-face {
+    font-family:"Lulo-Clean-W01-One-Bold";
+    src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/aee74cb3-c913-4b54-9722-6001c92325f2.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80de9d5d-ab5f-40ce-911b-104e51e93d7c.woff") format("woff");
+font-display: block;
+}
+@font-face{
+    font-family:"Lulo-Clean-W05-One-Bold";
+    src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Lulo_Clean/v1/LuloCleanW05-OneBold.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Lulo_Clean/v1/LuloCleanW05-OneBold.woff") format("woff");
+font-display: block;
+}
+
+@font-face {
+    font-family: "Helvetica-W01-Light";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/03805817-4611-4dbc-8c65-0f73031c3973.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d5f9f72d-afb7-4c57-8348-b4bdac42edbb.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/05ad458f-263b-413f-b054-6001a987ff3e.svg#05ad458f-263b-413f-b054-6001a987ff3e") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-W02-Light";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80c34ad2-27c2-4d99-90fa-985fd64ab81a.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b8cb02c2-5b58-48d8-9501-8d02869154c2.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/92c941ea-2b06-4b72-9165-17476d424d6c.svg#92c941ea-2b06-4b72-9165-17476d424d6c") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-W01-Roman";
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Helvetica/v3/HelveticaLTW04-Roman.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4021a3b9-f782-438b-aeb4-c008109a8b64.woff") format("woff");
+    font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-W02-Roman";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b56b944e-bbe0-4450-a241-de2125d3e682.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7da02f05-ae8b-43a1-aeb9-83b3c0527c06.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/66cac56e-d017-4544-9d0c-f7d978f0c5c2.svg#66cac56e-d017-4544-9d0c-f7d978f0c5c2") format("svg");
+font-display: block;
+}
+@font-face {
+    font-family: "Helvetica-LT-W10-Roman";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix");
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6f8d1983-4d34-4fa4-9110-988f6c495757.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7903ee3f-e9ab-4bdc-b7d2-d232de2da580.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0.svg#9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0") format("svg");
+font-display: block;
+}
+
+.section1 {
+    background-color: red;
+    display: grid;
+    place-content: center;
+    padding-block: 30px;
+    background-color: rgb(252, 240, 241);
+}
+
+.section1-content {
+    width: 980px;
+    position: relative;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.section1-content img {
+    width: 695px;
+    height: 582px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+}
+
+.section1-content h1 {
+    color: rgb(255,140,8);
+    font-size: 38px;
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    line-height: 1.5em;
+    text-align: end;
+}
+
+.section1-content p {
+    color: rgb(61,41,43);
+    font-size: 17px;
+    letter-spacing: normal;
+    width: 548px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+}
+
+.section1-content button {
+    font: normal normal normal 13px/1.4em lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    background-color: rgb(244,216,65);
+    padding: 1em;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.section1-content button:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+.section1-content button:nth-of-type(2) {
+    background-color: rgb(251,242,190);
+}
+
+.section2 {
+    display: grid;
+    place-content: center;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb( 251,242,190 );
+    width: 696px;
+    height: 389px;
+}
+
+.section2-content p:first-of-type {
+    margin-top: 50px;
+    font-size: 19px;
+    line-height: 1.5em;
+}
+
+.section2-content p {
+    font-size: 17px;
+    width: 555px;
+    font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 100px;
+}
+
+.section3-content {
+    height: 373px;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    vertical-align: baseline;
+}
+
+.section3-content h1 {
+    letter-spacing: -0.1em;
+    line-height: normal;
+    font: normal normal normal 58px lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    color: rgb(242,162,171);
+}
+
+.section3-content button {
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    font-size: 13px;
+    margin: 0px 1.5px 0px 0px;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    border-radius: 7px;
+    border-color: transparent;
+    background-color: #F2A2AB;
+    margin-top: 15px;
+}
+
+.section3-content img {
+    height: 330px;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4 h1 {
+    color: rgb(255,140,8);
+    font-size: 38px;
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    line-height: 1.5em;
+    text-align: end;
+}
+
+.section4 h2 {
+    font: normal normal normal 15px/1.875em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+
+.contact-list {
+    display: flex;
+    gap: 0.3em;
+    list-style: none;
+    color: rgb(255,140,8);
+    font-size: 25px;
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    line-height: 1.5em;
+    text-align: end;
+}
+
+.section4 form {
+    margin-top: 20px;
+}
+
+.section4 form p {
+    font: normal normal normal 17px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+}
+
+.form-section input, .form-section textarea {
+    font: normal normal 700 14px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(251,242,190);
+    border-color: var(--corvid-border-color,rgba(var(--brd,227,227,227),var(--alpha-brd,1)));
+    border-radius: var(--corvid-border-radius,var(--rd,0));
+    border-style: solid;
+    border-width: var(--corvid-border-width,var(--brw,1px));
+    box-shadow: -4.24px 4.24px 0px 0px rgba(248,233,157,1);
+    box-sizing: border-box!important;
+    direction: var(--inputDirection,"inherit");
+    margin: 0;
+    max-width: 100%;
+    min-height: var(--inputHeight);
+    padding: var(--textPadding);
+    padding-inline-end: var(--textPadding_end);
+    padding-inline-start: var(--textPadding_start);
+    text-align: var(--inputAlign,"inherit");
+    text-overflow: ellipsis;
+    width: 100%;
+}
