@@ -9,15 +9,14 @@ class Header extends HTMLElement {
     
     * {
       box-sizing: border-box;
+      padding: 0;
+      margin: 0;
     }
 
-    .header {
-      position: fixed;
+    .header-desktop {
       width: 100vw;
-      top: 0;
       background-color: rgb(255,254,250);
-      border-bottom: 1px solid red;
-      z-index: -1;
+      padding-bottom: 10px;
     }
     a {
       color: inherit;
@@ -25,9 +24,9 @@ class Header extends HTMLElement {
     }
 
     .logo-section {
-      width: 980px;
+      width: 1000px;
+      height: 121px;
       margin-inline: auto;
-      padding-top: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -41,7 +40,8 @@ class Header extends HTMLElement {
   }
   
   hr {
-      width: calc(100% - 48px - 48px);
+      min-width: 1000px;
+      width: calc(100% - 50px - 50px);
       margin-inline: auto;
       margin-block: 0;
       padding: 0;
@@ -49,14 +49,12 @@ class Header extends HTMLElement {
   }
   
   .navbar {
-      width: 940px;
+      width: 1000px;
       margin-inline: auto;
       display: flex;
       justify-content: space-between;
-      height: 59px;
-      align-items: center;
-      padding-inline: 20px;
-      padding-bottom: 15px;
+      align-items: flex-start;
+      padding-inline: 10px;
   }
   
   .navbar ul {
@@ -67,11 +65,10 @@ class Header extends HTMLElement {
   }
   
   .left-list {
-      width: 588px;
       color: rgb(105, 105, 105);
       font-size: 15px;
       font-family: sans-serif;
-      line-height: 22px;
+      line-height: 45px;
       gap: 30px;
       font-weight: 300;
   }
@@ -83,9 +80,9 @@ class Header extends HTMLElement {
   
   .right-list {
       gap: 15px;
-      font-size: 16px;
+      font-size: 15px;
       font-family: sans-serif;
-      line-height: 22px;
+      line-height: 45px;
   }
   
   .right-list li:first-child {
@@ -94,40 +91,47 @@ class Header extends HTMLElement {
       font-size: 14px;
   }
 
-  @media only screen and (min-width: 1051px) {
-    .hamburger {
+  @media only screen and (min-width: 1150px) {
+    .hamburger, .header-mob {
       display: none;
     }
   }
 
-  @media only screen and (max-width: 1050px) {
-    hr, .navbar {
+  @media only screen and (max-width: 1150px) {
+    .header-desktop, .navbar {
       display: none !important;
     }
 
-    .logo-section {
-      padding-top: 0;
-      padding-bottom: 10px;
-      width: calc(100vw - 40px);
-      padding-left: 10px;
-      padding-right: 30px;
+    .hamburger {
+      font-size: 60px;
+      transform: rotate(90deg);
+      background-color: rgb(255,217,173);
+      border: none;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-content: center;
+      color: rgb(255,140,8);
     }
 
-    .hamburger {
-      font-size: 20px;
-      color: black;
-      background-color: transparent;
-      border: none;
-      transform: rotate(90deg);
-      font-size: 60px;
-      color: rgb(255,140,8);
+    .header-mob {
+      background-color: rgb(255,254,250);
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: calc(5vw - 10px);
+      padding-right: 5vw;
+    }
+
+    .hamburger:hover {
+      cursor: pointer;
     }
   }
     </style>
-    <div class="header">
+    <div class="header-desktop">
       <div class="logo-section">
         <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-        <button class="hamburger">III</button>
       </div>
       <hr />
       <nav class="navbar">
@@ -147,6 +151,10 @@ class Header extends HTMLElement {
           <li><a href="https://www.facebook.com/queenpin.va" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
       </nav>
+    </div>
+    <div class="header-mob">
+      <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
+      <button class="hamburger">III</button>
     </div>
       `;
   }
