@@ -6,10 +6,18 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     .logo-section {
       width: 980px;
       margin-inline: auto;
       padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
   
   #logo {
@@ -50,6 +58,12 @@ class Header extends HTMLElement {
       font-family: sans-serif;
       line-height: 22px;
       gap: 30px;
+      font-weight: 300;
+  }
+
+  .left-list li:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
   }
   
   .right-list {
@@ -64,9 +78,31 @@ class Header extends HTMLElement {
       font-weight: 100;
       font-size: 14px;
   }
+
+  .hamburger {
+    // display: none;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    hr, .navbar {
+      display: none !important;
+    }
+
+    .logo-section {
+      padding-bottom: 10px;
+      width: calc(100vw - 20px);
+      padding-inline: 10px;
+    }
+
+    .hamburger {
+      font-size: 20px;
+      color: black;
+    }
+  }
     </style>
     <div class="logo-section">
       <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
+      <button class="hamburger"><i class="fa-light fa-bars"></i></button>
     </div>
     <hr />
     <nav class="navbar">
@@ -79,11 +115,11 @@ class Header extends HTMLElement {
         <li class="navbar-link">More</li>
       </ul>
       <ul class="right-list">
-        <li>queenpinpva@gmail.com</li>
-        <li><i class="fab fa-pinterest-p"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-linkedin-in"></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
+        <li><a href="mailto:queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
+        <li><a href="https://pinterest.com/queenpinpva" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+        <li><a href="https://www.instagram.com/queenpin.online/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/queenpin.va" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
       </ul>
     </nav>
       `;
