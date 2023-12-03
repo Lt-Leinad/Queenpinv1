@@ -6,6 +6,19 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      background-color: rgb(255,254,250);
+      border-bottom: 1px solid red;
+      z-index: -1;
+    }
     a {
       color: inherit;
       text-decoration: none;
@@ -18,6 +31,7 @@ class Header extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: transparent;
   }
   
   #logo {
@@ -31,6 +45,7 @@ class Header extends HTMLElement {
       margin-inline: auto;
       margin-block: 0;
       padding: 0;
+      height: 1px;
   }
   
   .navbar {
@@ -38,7 +53,7 @@ class Header extends HTMLElement {
       margin-inline: auto;
       display: flex;
       justify-content: space-between;
-      height: 44px;
+      height: 59px;
       align-items: center;
       padding-inline: 20px;
       padding-bottom: 15px;
@@ -68,7 +83,7 @@ class Header extends HTMLElement {
   
   .right-list {
       gap: 15px;
-      font-size: 15px;
+      font-size: 16px;
       font-family: sans-serif;
       line-height: 22px;
   }
@@ -79,8 +94,10 @@ class Header extends HTMLElement {
       font-size: 14px;
   }
 
-  .hamburger {
-    // display: none;
+  @media only screen and (min-width: 1051px) {
+    .hamburger {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 1050px) {
@@ -107,28 +124,30 @@ class Header extends HTMLElement {
     }
   }
     </style>
-    <div class="logo-section">
-      <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-      <button class="hamburger">III</button>
+    <div class="header">
+      <div class="logo-section">
+        <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
+        <button class="hamburger">III</button>
+      </div>
+      <hr />
+      <nav class="navbar">
+        <ul class="left-list">
+          <li class="navbar-link">Home</li>
+          <li class="navbar-link">Services</li>
+          <li class="navbar-link">Testimonials</li>
+          <li class="navbar-link">Blog</li>
+          <li class="navbar-link">About</li>
+          <li class="navbar-link">More</li>
+        </ul>
+        <ul class="right-list">
+          <li><a href="mailto:queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
+          <li><a href="https://pinterest.com/queenpinpva" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.instagram.com/queenpin.online/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.facebook.com/queenpin.va" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+      </nav>
     </div>
-    <hr />
-    <nav class="navbar">
-      <ul class="left-list">
-        <li class="navbar-link">Home</li>
-        <li class="navbar-link">Services</li>
-        <li class="navbar-link">Testimonials</li>
-        <li class="navbar-link">Blog</li>
-        <li class="navbar-link">About</li>
-        <li class="navbar-link">More</li>
-      </ul>
-      <ul class="right-list">
-        <li><a href="mailto:queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
-        <li><a href="https://pinterest.com/queenpinpva" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
-        <li><a href="https://www.instagram.com/queenpin.online/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://www.facebook.com/queenpin.va" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      </ul>
-    </nav>
       `;
   }
 }
