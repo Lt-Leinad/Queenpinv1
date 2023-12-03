@@ -89,20 +89,27 @@ class Header extends HTMLElement {
     }
 
     .logo-section {
+      padding-top: 0;
       padding-bottom: 10px;
-      width: calc(100vw - 20px);
-      padding-inline: 10px;
+      width: calc(100vw - 40px);
+      padding-left: 10px;
+      padding-right: 30px;
     }
 
     .hamburger {
       font-size: 20px;
       color: black;
+      background-color: transparent;
+      border: none;
+      transform: rotate(90deg);
+      font-size: 60px;
+      color: rgb(255,140,8);
     }
   }
     </style>
     <div class="logo-section">
       <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-      <button class="hamburger"><i class="fa-light fa-bars"></i></button>
+      <button class="hamburger">III</button>
     </div>
     <hr />
     <nav class="navbar">
