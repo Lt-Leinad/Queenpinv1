@@ -144,7 +144,7 @@ class Header extends HTMLElement {
       <nav class="navbar">
         <ul class="left-list">
           <li class="navbar-link">Home</li>
-          <li class="navbar-link">Services</li>
+          <a href="/Services/index.html"><li class="navbar-link">Services</li></a>
           <li class="navbar-link">Testimonials</li>
           <li class="navbar-link">Blog</li>
           <li class="navbar-link">About</li>

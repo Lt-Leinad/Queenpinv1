@@ -87,6 +87,7 @@ font-display: block;
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 :root {
