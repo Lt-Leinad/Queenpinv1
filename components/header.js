@@ -145,10 +145,10 @@ class Header extends HTMLElement {
         <ul class="left-list">
         <a href="/"><li class="navbar-link">Home</li></a>
           <a href="/Services/index.html"><li class="navbar-link">Services</li></a>
-          <li class="navbar-link">Testimonials</li>
+          <a href="/Testimonials/index.html"><li class="navbar-link">Testimonials</li></a>
           <li class="navbar-link">Blog</li>
-          <li class="navbar-link">About</li>
-          <li class="navbar-link">More</li>
+          <a href="/About/index.html"><li class="navbar-link">About</li></a>
+          <a href="/Contact/index.html"><li class="navbar-link">Contact</li></a>
         </ul>
         <ul class="right-list">
           <li><a href="mailto:queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
