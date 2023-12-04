@@ -91,24 +91,30 @@ class Header extends HTMLElement {
       font-size: 14px;
   }
 
-  @media only screen and (min-width: 1150px) {
+  @media only screen and (min-width: 1110px) {
     .hamburger, .header-mob {
       display: none;
     }
   }
 
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1110px) {
     .header-desktop, .navbar {
       display: none !important;
     }
 
+    #logo {
+      width: 120px;
+      object-fit: contain;
+      margin: 0;
+  }
+
     .hamburger {
-      font-size: 60px;
+      font-size: 30px;
       transform: rotate(90deg);
       background-color: rgb(255,217,173);
       border: none;
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       display: grid;
       place-content: center;
       color: rgb(255,140,8);
