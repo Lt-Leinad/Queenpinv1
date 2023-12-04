@@ -97,7 +97,6 @@ a {
     display: grid;
     place-content: center;
     padding-block: 80px;
-    min-height: calc(((100vh - 177px) - 700px));
 }
 
 .section1-content {
@@ -110,7 +109,6 @@ a {
     padding-right: 40px;
     max-width: 90vw;
     /* border: 1px solid red; */
-    min-height: calc(((100vh - 177px) - 700px));
 }
 
 .section1-content *:not(img) {
@@ -160,6 +158,7 @@ a {
     border-color: transparent;
     transition: background-color 250ms;
     width: fit-content;
+    color: rgb(51,51,50);
 }
 
 .section1-button button {
@@ -199,7 +198,6 @@ a {
         margin-left: 0;
         align-items: flex-end;
         padding-right: 0;
-        /* padding-inline: 80px; */
     }
 
     .section1-content h1 {
@@ -216,7 +214,9 @@ a {
     .section1-content img {
         left: 50%;
         transform: translateX(-50%);
-        bottom: -160px;
+        bottom: -80px;
+        width: calc(940px * 0.6);
+        object-fit: contain;
     }
 
     .section1-button {
@@ -246,13 +246,13 @@ a {
 
     .section1-content img {
         width: 460px;
-        bottom: -80px;
+        bottom: -60px;
         object-fit: contain;
         max-width: 90vw;
     }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 551px) {
     .section1-mob {
         display: none !important;
     }
@@ -290,8 +290,8 @@ a {
         color: rgb(61,41,43);
         font-size: 15px;
         letter-spacing: normal;
-        max-width: 360px;
-        width: calc(100% - 40px);
+        max-width: 400px;
+        width: 90vw;
         line-height: 1.5em;
         display: grid;
         place-content: center;

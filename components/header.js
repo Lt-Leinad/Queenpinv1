@@ -103,7 +103,7 @@ class Header extends HTMLElement {
     }
 
     #logo {
-      width: 120px;
+      width: 80px;
       object-fit: contain;
       margin: 0;
   }
@@ -128,6 +128,7 @@ class Header extends HTMLElement {
       align-items: center;
       padding-left: calc(5vw - 10px);
       padding-right: 5vw;
+      height: 80px;
     }
 
     .hamburger:hover {
