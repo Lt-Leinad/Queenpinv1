@@ -90,6 +90,7 @@ font-display: block;
 }
 
 .section1 {
+    padding-top: calc(var(--spacer)/2);
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@ font-display: block;
     gap: 20px;
     background-color: var(--pink);
     max-width: 1000px;
-    width: 90vw;
+    width: calc(100% - 80px);
     padding: var(--spacer);
     margin-top: 40px;
 }
@@ -130,9 +131,10 @@ font-display: block;
 .growth h3, .maintain h3 {
     font-size: var(--fs-l);
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    white-space: nowrap;
 }
 
-.growth h4, li, .maintain h4 {
+.growth h4, .growth li, .maintain li, .maintain h4 {
     font-size: var(--fs-m);
     font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
     line-height: 1.5em;
@@ -147,4 +149,19 @@ font-display: block;
 
 .growth *, .maintain * {
     color: var(--black);
+}
+
+@media only screen and (max-width: 1110px) {
+    :root {
+        --fs-xl: 30px;
+        --fs-l: 16px;
+        --fs-m: 15px;
+        --spacer: 40px;
+    }
+
+    .growth, .maintain {
+        max-width: 600px;
+        width: calc(100% - 80px);
+    }
+
 }
