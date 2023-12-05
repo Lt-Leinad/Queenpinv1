@@ -129,6 +129,7 @@ class Header extends HTMLElement {
       padding-left: calc(5vw - 10px);
       padding-right: 5vw;
       height: 80px;
+      border-bottom: 1px solid rgb(255,140,8);
     }
 
     .hamburger:hover {

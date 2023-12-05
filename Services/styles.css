@@ -107,6 +107,14 @@ font-display: block;
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
     font-size: var(--fs-l);
     color: var(--yellow);
+    max-width: 90vw;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .section1 h2 {
+        font-size: 15px;
+    }
 }
 
 .growth, .maintain {
@@ -168,7 +176,6 @@ font-display: block;
 @media only screen and (max-width: 500px) {
     .growth, .maintain, .section3 img {
         width: 100vw;
-        margin-top: 5vw;
     }
 }
 
