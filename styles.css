@@ -327,6 +327,7 @@ a {
         font: inherit;
         padding: 0;
         border: none;
+        color: rgb(51,51,50) !important;
     }
 
     .section1-mob-button:hover {
