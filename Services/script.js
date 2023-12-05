@@ -9,3 +9,13 @@ const doubleformSectionFocusFunc = function (n) {
     n
   ].classList.add("form-section-clicked");
 };
+
+const servicesPopUp = function (n) {
+  document
+    .querySelectorAll(".services-popup")
+    [n].classList.remove("display-none");
+};
+
+const servicesPopUpExit = function (n) {
+  document.querySelectorAll(".services-popup")[n].classList.add("display-none");
+};

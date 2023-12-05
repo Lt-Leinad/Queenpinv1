@@ -85,27 +85,26 @@
         </p>
         <div class="services">
           <div class="row1">
-            <button>
-              PINTEREST<br />
+            <button onclick="servicesPopUp(0)">
               ACCOUNT<br />
               SETUP
             </button>
-            <button>
+            <button onclick="servicesPopUp(1)">
               ACCOUNT<br />
               AUDIT
             </button>
           </div>
           <div class="row2">
-            <button>
+            <button onclick="servicesPopUp(2)">
               PIN<br />
               DESIGN<br />
               PACKAGE
             </button>
-            <button>
+            <button onclick="servicesPopUp(3)">
               PIN<br />
               DESCRIPTION <br />PACKAGE
             </button>
-            <button>
+            <button onclick="servicesPopUp(4)">
               CUSTOM<br />
               PACKAGE
             </button>
@@ -180,6 +179,62 @@
           </p>
         </form>
       </section>
+
+      <div class="services-popup display-none">
+        <h1>ACCOUNT SETUP</h1>
+        <h2>
+          Pinterest business account setup with rich pins, creation and
+          organization of boards, SEO research, keyword report, and more!
+        </h2>
+        <div class="services-popup-btns">
+          <button onclick="servicesPopUpExit(0)">Back</button>
+        </div>
+      </div>
+
+      <div class="services-popup display-none">
+        <h1>ACCOUNT AUDIT</h1>
+        <h2>
+          I will analyze your Pinterest business account and offer/integrate
+          suggested changes to get it ready for monthly services.
+        </h2>
+        <div class="services-popup-btns">
+          <button onclick="servicesPopUpExit(1)">Back</button>
+        </div>
+      </div>
+
+      <div class="services-popup display-none">
+        <h1>PIN DESIGN PACKAGE</h1>
+        <h2>
+          This includes incorporating your logo, brand colors and fonts to fresh
+          template designs. This will be a custom package and price according to
+          the requested amount of pins.
+        </h2>
+        <div class="services-popup-btns">
+          <button onclick="servicesPopUpExit(2)">Back</button>
+        </div>
+      </div>
+
+      <div class="services-popup display-none">
+        <h1>PIN DESCRIPTION PACKAGE</h1>
+        <h2>
+          Fresh pin descriptions for each fresh pin integrating ideal SEO
+          keywords
+        </h2>
+        <div class="services-popup-btns">
+          <button onclick="servicesPopUpExit(3)">Back</button>
+        </div>
+      </div>
+
+      <div class="services-popup display-none">
+        <h1>CUSTOM PACKAGE</h1>
+        <h2>
+          A custom management or services package for you based on your
+          Pinterest needs and goals!
+        </h2>
+        <div class="services-popup-btns">
+          <button onclick="servicesPopUpExit(4)">Back</button>
+        </div>
+      </div>
     </div>
     <footer-component></footer-component>
   </body>

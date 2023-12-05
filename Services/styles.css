@@ -4,6 +4,7 @@
     --pink: rgb( 248,207,212);
     --dark-pink: rgb(242,162,171);
     --blue: rgb(151,210,227);
+    --light-yellow: rgb(251,242,190);
     --black: rgb(61,41,43);
     --fs-xl: 46px;
     --fs-l: 25px;
@@ -400,6 +401,91 @@ font-display: block;
         width: 100%;
     }
 }
+
+.services-popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    gap: 20px;
+    z-index: 999;
+    padding-inline: 20px;
+    padding-block: 40px;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  }
+  
+  .services-popup h1 {
+    line-height: 1.5em;
+    font-size: 27px;
+    color: var(--black);
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+ .services-popup h2 {
+    font-size: 22px;
+    color: var(--black);
+    font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .services-popup-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services-popup-btns button {
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    font-size: 16px;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    border-color: transparent;
+    background-color: var(--light-yellow);
+    transition: all 0.2s ease, visibility 0s;
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  .services-popup-btns button:hover {
+    border-radius: 5rem;
+    background-color: var(--pink);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .services-popup {
+        width: 375px;
+    }
+    .services-popup h1 {
+        font-size: 16px;
+    }
+
+    .services-popup h2 {
+        font-size: 14px;
+    }
+
+    .services-popup button {
+        font-size: 11px;
+    }
+  }
+
 
 .display-none {
     display: none !important;
