@@ -119,17 +119,16 @@
 
         <form
           class="form"
-          name="Queenpin-Contact-Form"
+          name="Queenpin-Contact-Form-Services-Page"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
-          action="/formSubmit/index.html"
         >
           <p class="form-section">
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Name *"
               onfocus="formSectionFocusFunc(0)"
               required
             />
@@ -140,7 +139,7 @@
               id="email-box"
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email *"
               onfocus="doubleformSectionFocusFunc(0)"
               required
             />
@@ -150,7 +149,6 @@
               name="phone number"
               placeholder="Phone Number"
               onfocus="doubleformSectionFocusFunc(1)"
-              required
             />
           </p>
 
@@ -159,7 +157,7 @@
               id="subject-box"
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder="Subject *"
               onfocus="formSectionFocusFunc(2)"
               required
             />
@@ -170,7 +168,7 @@
               type="text"
               id="msg-box"
               name="message"
-              placeholder="Comments"
+              placeholder="Message *"
               onfocus="formSectionFocusFunc(3)"
               required
             ></textarea>

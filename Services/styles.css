@@ -400,3 +400,7 @@ font-display: block;
         width: 100%;
     }
 }
+
+.display-none {
+    display: none !important;
+}
