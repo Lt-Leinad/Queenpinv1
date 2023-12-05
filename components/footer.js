@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
       <style>
       .footer {
-        height: 80px;
+        height: 160px;
         width: 100vw;
         background-color: rgb( 248,207,212);
       }
