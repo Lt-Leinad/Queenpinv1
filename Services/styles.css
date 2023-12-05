@@ -1,11 +1,11 @@
 :root {
     --orange: rgb(255,140,8);
     --yellow: rgb(244,216,65);
-    --pink: rgb( 248,207,212);
     --dark-pink: rgb(242,162,171);
     --blue: rgb(151,210,227);
     --light-yellow: rgb(251,242,190);
     --black: rgb(61,41,43);
+    --pink: rgb( 248,207,212);
     --fs-xl: 46px;
     --fs-l: 25px;
     --fs-m: 23px;

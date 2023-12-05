@@ -96,15 +96,17 @@ font-display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding-block: 120px;
+    gap: 20px;
+    padding-block: 80px;
 }
 
 .body h1 {
     color: rgb(38,53,57);
     padding-inline: 5vw;
     text-align: center;
-    font: normal normal normal 42px lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
+    font-size: 42px;
+    letter-spacing: -0.1em;
+    font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
 }
 
 .body p {
@@ -151,8 +153,14 @@ font-display: block;
 .contact-details p {
     line-height: 1.875em;
     text-align: center;
-    color: var(--yellow);
+    padding: 0;
+    color: rgb(38,53,57);
     font: normal normal normal 15px/1.875em helvetica-w01-light,helvetica-w02-light,sans-serif;
+}
+
+.contact-details p:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .contact-list {

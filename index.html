@@ -13,10 +13,12 @@
     <script src="script.js" defer></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
+    <script src="components/menu.js" defer></script>
     <link rel="icon" type="image/x-icon" href="/photos/favicon.ico" />
     <title>Pinterest Management Services | Queenpin</title>
   </head>
   <body>
+    <menu-component></menu-component>
     <header-component></header-component>
     <div class="body">
         <section class="section1">
@@ -117,7 +119,11 @@
             </form>
         </section>
     </div>
-    <footer-component></footer-component>
-
+    <div class="contact-modal display-none">
+        <div class="x-out-container"><button class="x-out-btn" onclick="xOutFunc()">X</button></div>
+        <h1>Perfect Your Pinterest Today With a FREE Consultation!</h1>
+        <a href="/Contact/index.html"><button class="get-in-touch">GET IN TOUCH</button></a>
+        <img src="/photos/phone_img.webp" alt="Phone Image" />
+    </div>
   </body>
 </html>

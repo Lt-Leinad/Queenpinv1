@@ -1,3 +1,7 @@
+const menuFunc = function () {
+  document.querySelector(".menu").classList.remove("display-none");
+};
+
 class Header extends HTMLElement {
   constructor() {
     super();
@@ -162,7 +166,7 @@ class Header extends HTMLElement {
     </div>
     <div class="header-mob">
       <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-      <button class="hamburger">III</button>
+      <button class="hamburger" onclick="menuFunc()">III</button>
     </div>
       `;
   }
