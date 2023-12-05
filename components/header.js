@@ -314,7 +314,7 @@ class Header extends HTMLElement {
           <a href="/Testimonials"><li class="navbar-link">Testimonials</li></a>
           <li class="navbar-link">Blog</li>
           <a href="/Contact"><li class="navbar-link">Contact</li></a>
-          <a href="/PrivacyPolicy"><li class="navbar-link">Privacy Policy</li></a>
+          <a href="/components/Privacy Policy _ Queen Pin.pdf" target="_blank"><li class="navbar-link">Privacy Policy</li></a>
         </ul>
         <ul class="right-list">
           <li><a href="mailto:queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>

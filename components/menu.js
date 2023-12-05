@@ -245,7 +245,7 @@ class Menu extends HTMLElement {
         <a href="/Testimonials"><li>TESTIMONIALS</li></a>
         <a href="/Blog"><li>BLOG</li></a>
         <a href="/Contact"><li>CONTACT</li></a>
-        <a href="/PrivacyPolicy"><li>PRIVACY POLICY</li></a>
+        <a href="/components/Privacy Policy _ Queen Pin.pdf" target="_blank"><li>PRIVACY POLICY</li></a>
         <a><li>
             <ul>
                 <a href="https://pinterest.com/queenpinpva" target="_blank"><li><i class="fab fa-pinterest-p"></i></li></a>
