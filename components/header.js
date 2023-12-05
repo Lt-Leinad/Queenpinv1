@@ -1,5 +1,13 @@
 const menuFunc = function () {
-  document.querySelector(".menu").classList.remove("display-none");
+  document.querySelector(".hamburger").classList.remove("spin9-12");
+  document.querySelector(".close-menu").classList.remove("spin12-3");
+  document.querySelector(".hamburger").classList.add("spin12-3");
+  document.querySelector(".close-menu").classList.add("spin9-12");
+  document.querySelector(".menu").classList.remove("fade-out");
+
+  setTimeout(function () {
+    document.querySelector(".menu").classList.remove("display-none");
+  }, 125);
 };
 
 class Header extends HTMLElement {
@@ -10,6 +18,72 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
+
+    @keyframes spinPlus {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(180deg);
+      }
+    }
+
+    @keyframes spinNeg {
+      from {
+        transform: rotate(-180deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    .spin12-3 {
+      animation-name: spinPlus;
+      animation-duration: 500ms;
+      animation-timing-function: ease-in;
+    }
+
+    .spin9-12 {
+      animation-name: spinNeg;
+      animation-duration: 500ms;
+      animation-timing-function: ease-out;
+    }
+
+    @keyframes fade-in {
+      from {
+          opacity: 0;
+      }
+
+      to {
+          opacity: 1;
+      }
+    }
+
+    @keyframes fade-out {
+      from {
+          opacity: 1;
+      }
+
+      to {
+          opacity: 0;
+      }
+    }
+
+    .fade-in {
+      animation-name: fade-in;
+      animation-duration: 750ms;
+      animation-timing-function: ease;
+      opacity: 1;
+    }
+
+    .fade-out {
+      animation-name: fade-out;
+      animation-duration: 750ms;
+      animation-timing-function: ease;
+      opacity: 1;
+    }
     
     * {
       box-sizing: border-box;
@@ -114,7 +188,6 @@ class Header extends HTMLElement {
 
     .hamburger {
       font-size: 30px;
-      transform: rotate(90deg);
       background-color: rgb(255,217,173);
       border: none;
       width: 40px;
@@ -122,6 +195,7 @@ class Header extends HTMLElement {
       display: grid;
       place-content: center;
       color: rgb(255,140,8);
+      transition-duration: 500ms;
     }
 
     .header-mob {
@@ -139,6 +213,14 @@ class Header extends HTMLElement {
     .hamburger:hover {
       cursor: pointer;
     }
+
+    .red {
+      background-color: red;
+    }
+
+    . {
+      transform: rotate(180deg);
+    }
   }
     </style>
     <div class="header-desktop">
@@ -149,10 +231,10 @@ class Header extends HTMLElement {
       <nav class="navbar">
         <ul class="left-list">
         <a href="/"><li class="navbar-link">Home</li></a>
+        <a href="/About/index.html"><li class="navbar-link">About</li></a>
           <a href="/Services/index.html"><li class="navbar-link">Services</li></a>
           <a href="/Testimonials/index.html"><li class="navbar-link">Testimonials</li></a>
           <li class="navbar-link">Blog</li>
-          <a href="/About/index.html"><li class="navbar-link">About</li></a>
           <a href="/Contact/index.html"><li class="navbar-link">Contact</li></a>
         </ul>
         <ul class="right-list">
@@ -166,7 +248,7 @@ class Header extends HTMLElement {
     </div>
     <div class="header-mob">
       <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-      <button class="hamburger" onclick="menuFunc()">III</button>
+      <button class="hamburger" onclick="menuFunc()"><i class="fa-solid fa-bars"></i></button>
     </div>
       `;
   }
