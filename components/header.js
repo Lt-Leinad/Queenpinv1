@@ -7,7 +7,7 @@ const menuFunc = function () {
 
   setTimeout(function () {
     document.querySelector(".menu").classList.remove("display-none");
-  }, 100);
+  }, 80);
 };
 
 let scrolling = [];
@@ -21,10 +21,12 @@ const setScrolling = function () {
 
 window.addEventListener("scroll", function () {
   setScrolling();
-  if (scrolling[1] > scrolling[0]) {
-    document.querySelector(".header-mob").style.marginTop = "-80px";
-  } else {
-    document.querySelector(".header-mob").style.marginTop = "0px";
+  if (this.window.pageYOffset > 160) {
+    if (scrolling[1] > scrolling[0]) {
+      document.querySelector(".header-mob").style.marginTop = "-80px";
+    } else {
+      document.querySelector(".header-mob").style.marginTop = "0px";
+    }
   }
 });
 

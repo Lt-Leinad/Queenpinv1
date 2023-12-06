@@ -14,15 +14,11 @@ class Footer extends HTMLElement {
         --light-yellow: rgb(251,242,190);
         --black: rgb(61,41,43);
         --pink: rgb( 248,207,212);
-        --fs-xl: 46px;
-        --fs-l: 25px;
-        --fs-m: 23px;
-        --spacer: 80px;
     }
 
       .footer {
         padding: min(5vw, 40px);
-        padding-bottom: var(--spacer);
+        padding-bottom: 80px;
         width: 100vw;
         background-color: rgb( 248,207,212);
         border-top: 2px solid var(--dark-pink);

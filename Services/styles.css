@@ -144,18 +144,20 @@ font-display: block;
 }
 
 .growth h3, .maintain h3 {
-    font-size: 26px;
+    font-size: 22px;
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
     white-space: nowrap;
 }
 
-.growth h4, .growth li, .maintain li, .maintain h4 {
-    font-size: 24px;
-    width: 85%;
+.growth h4,  .maintain h4 {
+    text-align: center;
+}
+.growth li, .maintain li, .growth h4,  .maintain h4 {
+    font-size: 18px;
     font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
     line-height: 1.5em;
+    max-width: 85%;
 }
-
 .growth ul, .maintain ul {
     margin-top: calc(var(--spacer)/2);
     display: flex;
@@ -164,7 +166,7 @@ font-display: block;
 }
 
 .growth li, .maintain li {
-    font-size: 22px;
+    font-size: 18px;
     width: 85%;
 }
 
@@ -225,7 +227,7 @@ font-display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90vw;
+    width: 100vw;
     max-width: 1000px;
     margin-block: calc(var(--spacer)/2);
 }
@@ -269,7 +271,7 @@ font-display: block;
 
 @media only screen and (max-width: 525px) {
     .section2 button {
-        font-size: 10px;
+        font-size: 12px;
     }
     
 }
@@ -314,6 +316,12 @@ font-display: block;
 
     .section3 h1 {
         margin-block: 20px;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section3 h1 {
         font-size: var(--fs-l);
     }
 }

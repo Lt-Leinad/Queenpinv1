@@ -198,7 +198,7 @@ font-display: block;
 /* ------SECTION 3---------- */
 
 .section3 {
-    margin-block: var(--spacer);
+    margin-block: calc(var(--spacer)/2);
     background-color: var(--blue);
     padding-block: 40px;
 }
