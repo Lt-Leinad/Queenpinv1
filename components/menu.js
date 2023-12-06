@@ -7,7 +7,7 @@ const menuExitFunc = function () {
 
   setTimeout(function () {
     document.querySelector(".menu").classList.add("display-none");
-  }, 500);
+  }, 300);
 };
 
 class Menu extends HTMLElement {
@@ -164,7 +164,7 @@ class Menu extends HTMLElement {
 
         .menu {
           height: 100vh;
-          padding-bottom: 80px;
+          padding-block: 120px;
           width: 100vw;
           position: fixed;
           top: 0;
@@ -196,6 +196,9 @@ class Menu extends HTMLElement {
             align-items: center;
             padding-right: 5vw;
             height: 80px;
+            z-index: 999;
+            position: fixed;
+            top: 0;
         }
 
         .menu ul:first-child {

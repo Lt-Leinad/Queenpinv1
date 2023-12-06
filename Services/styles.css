@@ -95,7 +95,7 @@ font-display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block: var(--spacer)
+    margin-block: calc(var(--spacer)/2);
 }
 
 .section1 h1 {
@@ -109,12 +109,18 @@ font-display: block;
     font-size: var(--fs-l);
     color: var(--yellow);
     max-width: 90vw;
+    text-align: center;
 
 }
 
 @media only screen and (max-width: 500px) {
+    .section1 h1 {
+        font-size: 32px;
+    }
+
     .section1 h2 {
-        font-size: 15px;
+        font-size: 18px;
+        text-align: center;
     }
 }
 
@@ -122,12 +128,13 @@ font-display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     background-color: var(--pink);
     max-width: 1000px;
     width: calc(100% - 80px);
-    margin-top: var(--spacer);
-    padding: var(--spacer);
+    margin-top: calc(var(--spacer)/2);
+    padding-block: var(--spacer);
 }
 
 .growth svg, .maintain svg {
@@ -137,13 +144,14 @@ font-display: block;
 }
 
 .growth h3, .maintain h3 {
-    font-size: 24px;
+    font-size: 26px;
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
     white-space: nowrap;
 }
 
 .growth h4, .growth li, .maintain li, .maintain h4 {
-    font-size: var(--fs-m);
+    font-size: 24px;
+    width: 85%;
     font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
     line-height: 1.5em;
 }
@@ -152,7 +160,12 @@ font-display: block;
     margin-top: calc(var(--spacer)/2);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.growth li, .maintain li {
+    font-size: 22px;
+    width: 85%;
 }
 
 .growth *, .maintain * {
@@ -183,7 +196,6 @@ font-display: block;
 /* ------SECTION 2 */
 
 .section2 {
-    padding-block: var(--spacer);
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -215,7 +227,7 @@ font-display: block;
     justify-content: center;
     width: 90vw;
     max-width: 1000px;
-    margin-block: var(--spacer);
+    margin-block: calc(var(--spacer)/2);
 }
 
 .row1, .row2 {
@@ -237,14 +249,15 @@ font-display: block;
     transition: background-color 0.4s ease 0s;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .section2 button {
-        font-size: 10px;
+        font-size: 16px;
     }
     
     .section2 h1 {
     font-size: 24px;
     }
+
     .row2 {
         flex-wrap: wrap;
         width: 100%;
@@ -252,6 +265,13 @@ font-display: block;
         justify-content: center;
         margin-top: 20px;
     }
+}
+
+@media only screen and (max-width: 525px) {
+    .section2 button {
+        font-size: 10px;
+    }
+    
 }
 
 .section2 button:hover {
@@ -281,6 +301,7 @@ font-display: block;
     color: var(--black);
     margin-block: 40px;
     text-align: center;
+    max-width: 90vw;
     padding-inline: 20px;
 }
 
@@ -289,8 +310,11 @@ font-display: block;
         display: none !important;
     }
 
+    .section3 {padding-block: 40px;}
+
     .section3 h1 {
         margin-block: 20px;
+        font-size: var(--fs-l);
     }
 }
 

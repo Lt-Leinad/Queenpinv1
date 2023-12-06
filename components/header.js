@@ -7,8 +7,26 @@ const menuFunc = function () {
 
   setTimeout(function () {
     document.querySelector(".menu").classList.remove("display-none");
-  }, 125);
+  }, 100);
 };
+
+let scrolling = [];
+
+const setScrolling = function () {
+  scrolling.push(window.pageYOffset);
+  if (scrolling.length > 2) {
+    scrolling = scrolling.slice(scrolling.length - 2);
+  }
+};
+
+window.addEventListener("scroll", function () {
+  setScrolling();
+  if (scrolling[1] > scrolling[0]) {
+    document.querySelector(".header-mob").style.marginTop = "-80px";
+  } else {
+    document.querySelector(".header-mob").style.marginTop = "0px";
+  }
+});
 
 class Header extends HTMLElement {
   constructor() {
@@ -254,6 +272,11 @@ class Header extends HTMLElement {
   }
 
   @media only screen and (max-width: 1110px) {
+
+    body {
+      padding-top: 80px;
+    }
+
     .header-desktop, .navbar {
       display: none !important;
     }
@@ -285,6 +308,11 @@ class Header extends HTMLElement {
       padding-left: calc(5vw - 10px);
       padding-right: 5vw;
       height: 80px;
+      position: fixed;
+      top: 0;
+      transition-property: margin-top;
+      transition-duration: 500ms;
+      z-index: 998;
       border-bottom: 1px solid rgb(255,140,8);
     }
 
@@ -292,13 +320,6 @@ class Header extends HTMLElement {
       cursor: pointer;
     }
 
-    .red {
-      background-color: red;
-    }
-
-    . {
-      transform: rotate(180deg);
-    }
   }
     </style>
     <div class="header-desktop">
