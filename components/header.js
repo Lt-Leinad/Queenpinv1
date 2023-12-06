@@ -335,7 +335,7 @@ class Header extends HTMLElement {
         <a href="/About"><li class="navbar-link">About</li></a>
           <a href="/Services"><li class="navbar-link">Services</li></a>
           <a href="/Testimonials"><li class="navbar-link">Testimonials</li></a>
-          <li class="navbar-link">Blog</li>
+          <a href="/Blog"><li class="navbar-link">Blog</li></a>
           <a href="/Contact"><li class="navbar-link">Contact</li></a>
           <a href="/components/Privacy Policy _ Queen Pin.pdf" target="_blank"><li class="navbar-link">Privacy Policy</li></a>
         </ul>
