@@ -137,7 +137,7 @@ font-display: block;
 }
 
 .growth h3, .maintain h3 {
-    font-size: var(--fs-l);
+    font-size: 24px;
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
     white-space: nowrap;
 }
@@ -241,7 +241,10 @@ font-display: block;
     .section2 button {
         font-size: 10px;
     }
-
+    
+    .section2 h1 {
+    font-size: 24px;
+    }
     .row2 {
         flex-wrap: wrap;
         width: 100%;
@@ -297,7 +300,7 @@ font-display: block;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-bottom: 160px;
+    padding-bottom: calc(var(--spacer)/2)
 }
 
 .form input, .form textarea {
@@ -474,7 +477,8 @@ font-display: block;
         width: 375px;
     }
     .services-popup h1 {
-        font-size: 16px;
+        font-size: 17px;
+        letter-spacing: -0.1em;;
     }
 
     .services-popup h2 {

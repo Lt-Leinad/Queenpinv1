@@ -498,8 +498,7 @@ a {
     gap: 20px;
     min-height: 100vh;
     max-width: 100vw;
-    padding-top: var(--spacer);
-    margin-bottom: 80px;
+    padding-block: var(--spacer);
 }
 
 .section4 h1 {

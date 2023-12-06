@@ -97,7 +97,8 @@ font-display: block;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding-block: 80px;
+    padding-top: 80px;
+    padding-bottom: calc(var(--spacer)/2);
 }
 
 .body h1 {
