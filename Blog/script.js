@@ -7,17 +7,23 @@ request.then(function (response) {
     data["thumbnails"].forEach((x) => {
       const body = document.querySelector(".body");
 
-      body.style.height = `${Math.ceil(numThumbnails / 2) * 552}px`;
+      body.style.gridTemplateRows = `${numThumbnails / 2}`;
+
+      const thumbnailLink = document.createElement("a");
+      thumbnailLink.href = "/";
+      thumbnailLink.classList.add("thumbnailLink");
+      body.appendChild(thumbnailLink);
+
       // thumbnail
       const thumbnail = document.createElement("div");
       thumbnail.classList.add("thumbnail");
+      thumbnailLink.appendChild(thumbnail);
 
       // thumbnail-pic
       const thumbnailPic = document.createElement("img");
-      thumbnail.classList.add("thumbnail-pic");
-      thumbnailPic.src = x["thumbnail-pic"];
+      thumbnailPic.classList.add("thumbnail-pic");
+      thumbnailPic.src = `/images/thumbnail_images/${x["thumbnail"]}`;
       thumbnailPic.alt = x["alt"];
-      body.appendChild(thumbnail);
       thumbnail.appendChild(thumbnailPic);
 
       //text
