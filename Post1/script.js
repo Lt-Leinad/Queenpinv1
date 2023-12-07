@@ -2,10 +2,10 @@ const request = fetch("/Posts/PostsData/Posts.json");
 request.then(function (response) {
   response.json().then(function (data) {
     const posts = data["posts"];
-    posts[0] = posts[0];
+    thePost = posts[1];
     const body = document.querySelector(".body");
 
-    document.title = `Queen Pin Blog | ${posts[0].title}`;
+    document.title = `Queen Pin Blog | ${thePost.title}`;
 
     // topBar
     const topBar = document.createElement("div");
@@ -37,50 +37,50 @@ request.then(function (response) {
 
     const authorName = document.createElement("p");
     authorName.classList.add("authorName");
-    authorName.insertAdjacentHTML("afterBegin", posts[0].author);
+    authorName.insertAdjacentHTML("afterBegin", thePost.author);
     const time = document.createElement("p");
     time.classList.add("time");
-    time.insertAdjacentHTML("afterBegin", posts[0].times);
+    time.insertAdjacentHTML("afterBegin", thePost.times);
     author.appendChild(authorName);
     author.appendChild(time);
 
-    posts[0].orderOfTags.forEach((x, i) => {
+    thePost.orderOfTags.forEach((x, i) => {
       let el;
       switch (x) {
         case "h1":
           el = document.createElement(x);
           el.classList.add("title1");
-          el.insertAdjacentHTML("afterBegin", `${posts[0].orderOfContent[i]}`);
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
         case "h2":
           el = document.createElement(x);
           el.classList.add("title2");
-          el.insertAdjacentHTML("afterBegin", `${posts[0].orderOfContent[i]}`);
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
         case "h3":
           el = document.createElement(x);
           el.classList.add("title3");
-          el.insertAdjacentHTML("afterBegin", `${posts[0].orderOfContent[i]}`);
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
         case "p":
           el = document.createElement(x);
           el.classList.add("paragraph");
-          el.insertAdjacentHTML("afterBegin", `${posts[0].orderOfContent[i]}`);
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
         case "video-small":
           el = document.createElement("video");
           el.classList.add("small-image");
-          el.src = `/Posts/PostsData/images/${posts[0].orderOfContent[i]}`;
+          el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
           break;
         case "img-big":
           el = document.createElement("img");
           el.classList.add("big-image");
-          el.src = `/Posts/PostsData/images/${posts[0].orderOfContent[i]}`;
+          el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
           break;
         case "img-small":
           el = document.createElement("img");
           el.classList.add("small-image");
-          el.src = `/Posts/PostsData/images/${posts[0].orderOfContent[i]}`;
+          el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
           break;
       }
       body.appendChild(el);

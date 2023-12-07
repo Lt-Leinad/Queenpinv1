@@ -16,8 +16,37 @@ let head = document.head;
 let thumbnailArr = [];
 let index;
 let cur;
-let loco;
+let loco = String(window.location).slice(0, -"/Blog".length);
+
 styleTag = document.createElement("style");
+
+const postLink = function (e) {
+  const request2 = fetch("/Blog/Posts/PostData.json");
+  request2.then(function (response2) {
+    response2.json().then(function (data2) {
+      Object.keys(data2).forEach((x, i) => {
+        cur = e.target;
+        while (!cur.classList.contains("body")) {
+          cur = cur.parentElement;
+        }
+
+        [...cur.children].forEach((y, i) => {
+          thumbnailArr.push(isDescendant(y, e.target));
+        });
+        thumbnailArr.forEach((z, i) => {
+          z ? (index = thumbnailArr.indexOf(z)) : null;
+        });
+
+        // console.log(data2.posts[index]);
+
+        // return index;
+        // body.innerHTML = "";
+        // body.innerHTML = findThePost(thePost);
+      });
+      console.log(index);
+    });
+  });
+};
 
 const blogPageStyles = `.body {
     width: 100vw;
@@ -336,34 +365,8 @@ request.then(function (response) {
       body.style.gridTemplateRows = `${numThumbnails / 2}`;
 
       const thumbnailLink = document.createElement("a");
-
-      const postLink = function (e) {
-        const request2 = fetch("/Blog/Posts/PostData.json");
-        request2.then(function (response2) {
-          response2.json().then(function (data2) {
-            Object.keys(data2).forEach((x, i) => {
-              cur = e.target;
-              while (!cur.classList.contains("body")) {
-                cur = cur.parentElement;
-              }
-              thumbnailArr = [];
-              [...cur.children].forEach((y, i) => {
-                thumbnailArr.push(isDescendant(y, e.target));
-              });
-              thumbnailArr.forEach((z, i) => {
-                z ? (index = thumbnailArr.indexOf(z)) : null;
-              });
-
-              window.location = `/${postLink()}`;
-            });
-          });
-        });
-        return "Post" + index;
-      };
-
-      // thumbnailLink.href = `/${postLink()}`;
-      thumbnailLink.addEventListener("mousedown", postLink);
-
+      // thumbnailLink.href = postLink();
+      thumbnailLink.addEventListener("click", postLink);
       thumbnailLink.classList.add("thumbnailLink");
       body.appendChild(thumbnailLink);
 
@@ -523,11 +526,6 @@ const findThePost = function (thePost) {
             el = document.createElement("img");
             el.classList.add("big-image");
             el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
-            break;
-          case "img-small":
-            el = document.createElement("img");
-            el.classList.add("small-image");
-            el.src = `/Posts/PostsData/images/${posts[0].orderOfContent[i]}`;
             break;
         }
         body.appendChild(el);
