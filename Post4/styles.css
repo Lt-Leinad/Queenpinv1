@@ -85,6 +85,13 @@
     line-height: 1.4em;
 }
 
+.italic {
+    font-size: 18px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    color: rgba(75, 75, 75);
+    line-height: 1.4em;
+}
+
 .small-image {
     width: 375px;
     margin-inline: auto;
@@ -101,6 +108,15 @@
 
 .external-link {
     text-decoration: underline;
+}
+
+.lh {
+    font-size: 24px;
+    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold,
+        sans-serif;
+    line-height: 1.2em;
+    width: 100%;
+    margin-bottom: -15px;
 }
 
 @media only screen and (max-width: 850px) {
