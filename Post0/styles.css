@@ -123,7 +123,7 @@
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     color: rgba(75, 75, 75);
     line-height: 1.4em;
-    background-color:rgba(255, 140, 8, 0.5);
+    background-color:rgb(244,216,65);
     padding: 20px;
 }
 
@@ -132,7 +132,7 @@
         font-size: 28px;
     }
 
-    .top-bar, .title1, .title2, .title3, .paragraph, .lh {
+    .top-bar, .title1, .title2, .title3, .paragraph, .lh, .quote, .italic {
         padding-inline: 5vw;
     }
 }

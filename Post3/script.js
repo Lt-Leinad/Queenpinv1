@@ -5,7 +5,7 @@ request.then(function (response) {
     thePost = posts[3];
     const body = document.querySelector(".body");
 
-    document.title = `Queen Pin Blog | ${thePost.title}`;
+    document.title = `Queen Pin Blog - ${thePost.title}`;
 
     // topBar
     const topBar = document.createElement("div");
@@ -22,6 +22,7 @@ request.then(function (response) {
       "afterBegin",
       '<i class="fa-solid fa-ellipsis-vertical"></i>'
     );
+    // dots.title = "Share Post";
     dots.classList.add("dots");
 
     topBar.appendChild(dots);
@@ -60,6 +61,11 @@ request.then(function (response) {
         case "h3":
           el = document.createElement(x);
           el.classList.add("title3");
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
+          break;
+        case "h4":
+          el = document.createElement(x);
+          el.classList.add("title4");
           el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
         case "p":

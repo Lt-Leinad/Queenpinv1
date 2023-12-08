@@ -1,5 +1,6 @@
       .body {
         width: 100vw;
+        padding-block: 20px;
         max-width: 1000px;
         min-width: fit-content;
         margin-inline: auto;

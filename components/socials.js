@@ -2,6 +2,11 @@ const copyToClipBoard = function () {
   navigator.clipboard.writeText(`${window.location}`);
 };
 
+const findTitle = function () {
+  // console.log(this.document.title);
+  return document.title;
+};
+
 class Socials extends HTMLElement {
   constructor() {
     super();
@@ -19,19 +24,23 @@ class Socials extends HTMLElement {
         margin-inline: auto;
         margin-bottom: 40px;
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         gap: 40px
     } 
 
     .blog-socials ul {
         display: flex;
-        gap: 40px;
+        gap: 20px;
         list-style: none;
     }
 
-    .blog-socials ul li {
+    .blog-socials ul li, .blog-socials ul li a {
         color: rgba(75, 75, 75, 1);
         transition-duration: 250ms;
-      padding-block: 0.5em;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .blog-socials ul a:hover, .blog-socials ul li:hover {
@@ -57,10 +66,20 @@ class Socials extends HTMLElement {
       cursor: pointer;
     }
 
+  .share {
+    margin-right: -10px;
+    font-size: 18px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    color: rgba(75, 75, 75);
+    padding-block: 0.5em;
+
+  }
+
     @media only screen and (max-width: 500px) {
       .blog-socials {
         flex-direction: column;
         gap: 20px;
+        align-items: flex-start;
       }
     }
 
@@ -68,9 +87,10 @@ class Socials extends HTMLElement {
         <div class="blog-socials">
         <a class="socials-contact" href="/Contact"><button>Contact Us</button></a>
             <ul>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
-                <a href="https://twitter.com/intent/tweet?text=YOUR_TITLE&url=YOUR_URL" target="_blank"><li><i class="fa-brands fa-x-twitter"></i></li></a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
+                <li class="share">Share:</li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=${window.location}" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/intent/tweet?text=${document.title}&url=${window.location}" target="_blank"><li><i class="fa-brands fa-x-twitter"></i></li></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=${window.location}&title=${document.title}" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
                 <a class="clipBoardLink" title="Copy to clipboard" onclick="copyToClipBoard()" ><li><i class="fa-solid fa-paperclip"></i></li></a>
             </ul>
         </div>

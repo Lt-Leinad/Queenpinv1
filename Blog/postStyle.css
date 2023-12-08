@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-block: 40px;
+    padding-bottom: 40px;
 }
 
 .top-bar {
@@ -13,7 +13,7 @@
     justify-content: space-between;
     width: 100%;
     border-bottom: 1px solid rgba(75, 75, 75, 0.5);
-    padding-bottom: 10px;
+    padding-block: 10px;
 }
 
 .dots {
@@ -24,6 +24,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transition-duration: 250ms;
+}
+
+.dots:hover {
+    cursor: pointer;
+    color: rgb(151,210,227);
 }
 
 .details {
@@ -75,11 +81,27 @@
 .title3 {
     font-size: 22px;
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-    text-align: center;
-    margin-inline: auto;
+    text-align: left;
+}
+
+.title4 {
+    font-size: 20px;
+    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold,
+        sans-serif;
+    line-height: 1.2em;
+    letter-spacing: -0.1em;
+    width: 100%;
+    margin-bottom: -15px;
 }
 
 .paragraph {
+    font-size: 18px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    color: rgba(75, 75, 75);
+    line-height: 1.4em;
+}
+
+.italic {
     font-size: 18px;
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     color: rgba(75, 75, 75);
@@ -104,12 +126,35 @@
     text-decoration: underline;
 }
 
+.lh {
+    font-size: 24px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    line-height: 1.2em;
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.quote {
+    font-size: 18px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    color: rgba(75, 75, 75);
+    line-height: 1.4em;
+    background-color:rgb( 251,242,190 );
+    padding: 20px;
+}
+
 @media only screen and (max-width: 850px) {
     .title1 {
         font-size: 28px;
+        letter-spacing: -0.1em;
     }
 
-    .top-bar, .title1, .title2, .title3, .paragraph {
+    .lh, .title2, .title3 {
+        font-size: 22px;
+
+    }
+
+    .top-bar, .title1, .title2, .title3, .title4, .paragraph, .lh, .quote, .italic {
         padding-inline: 5vw;
     }
 }
