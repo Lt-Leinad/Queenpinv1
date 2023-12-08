@@ -112,11 +112,19 @@
 
 .lh {
     font-size: 24px;
-    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold,
-        sans-serif;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     line-height: 1.2em;
     width: 100%;
     margin-bottom: -15px;
+}
+
+.quote {
+    font-size: 18px;
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    color: rgba(75, 75, 75);
+    line-height: 1.4em;
+    background-color:rgba(255, 140, 8, 0.5);
+    padding: 20px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -124,7 +132,7 @@
         font-size: 28px;
     }
 
-    .top-bar, .title1, .title2, .title3, .paragraph {
+    .top-bar, .title1, .title2, .title3, .paragraph, .lh {
         padding-inline: 5vw;
     }
 }

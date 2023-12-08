@@ -71,6 +71,10 @@ request.then(function (response) {
           el = document.createElement("video");
           el.classList.add("small-image");
           el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
+          el.setAttribute("autoplay", "");
+          el.setAttribute("loop", "");
+          el.setAttribute("controls", "");
+          el.setAttribute("muted", "");
           break;
         case "img-big":
           el = document.createElement("img");
@@ -80,7 +84,22 @@ request.then(function (response) {
         case "img-small":
           el = document.createElement("img");
           el.classList.add("small-image");
-          el.src = `/Posts/PostsData/images/${posts[0].orderOfContent[i]}`;
+          el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
+          break;
+        case "lh":
+          el = document.createElement("h2");
+          el.classList.add("lh");
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
+          break;
+        case "italic":
+          el = document.createElement("em");
+          el.classList.add("italic");
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
+          break;
+        case "quote":
+          el = document.createElement("em");
+          el.classList.add("quote");
+          el.insertAdjacentHTML("afterBegin", `${thePost.orderOfContent[i]}`);
           break;
       }
       body.appendChild(el);

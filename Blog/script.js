@@ -11,13 +11,10 @@ function isDescendant(parent, child) {
 
 let thePost;
 const body = document.querySelector(".body");
-let styling;
-let head = document.head;
 let thumbnailArr = [];
 let index;
 let cur;
 let loco;
-styleTag = document.createElement("style");
 
 const blogPageStyles = `.body {
     width: 100vw;
@@ -201,136 +198,10 @@ const blogPageStyles = `.body {
     }
   }`;
 
-const postStyles = `.body {
-    max-width: 750px;
-    width: 100vw;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-block: 40px;
-  }
-  
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid rgba(75, 75, 75, 0.5);
-    padding-bottom: 10px;
-  }
-  
-  .dots {
-    border: none;
-    background-color: transparent;
-    font-size: 18px;
-    width: 10%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .details {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .author {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-  }
-  
-  .authorName {
-    font-size: 14px;
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-  }
-  
-  .author-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;;
-  }
-  
-  .time {
-    font-size: 11px;
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-  }
-  
-  .title1 {
-    font-size: 34px;
-    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold,
-        sans-serif;
-    line-height: 1.5em;
-    letter-spacing: 1pt;
-    width: 100%;
-  }
-  
-  .title2 {
-    font-size: 24px;
-    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold,
-        sans-serif;
-    line-height: 1.2em;
-    width: 100%;
-  }
-  
-  .title3 {
-    font-size: 22px;
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-    text-align: center;
-    margin-inline: auto;
-  }
-  
-  .paragraph {
-    font-size: 18px;
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-    color: rgba(75, 75, 75);
-    line-height: 1.4em;
-  }
-  
-  .small-image {
-    width: 375px;
-    margin-inline: auto;
-  }
-  
-  .big-image {
-    width: 100%;
-  }
-  
-  .internal-link {
-    text-decoration: underline;
-    color: rgb(255,140,8);
-  }
-  
-  .external-link {
-    text-decoration: underline;
-  }
-  
-  @media only screen and (max-width: 850px) {
-    .title1 {
-        font-size: 28px;
-    }
-  
-    .top-bar, .title1, .title2, .title3, .paragraph {
-        padding-inline: 5vw;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .small-image {
-        width: 100%;
-    }
-  }`;
-
 const request = fetch("/Blog/Posts/PostData.json");
 request.then(function (response) {
   response.json().then(function (data) {
     const numThumbnails = data["thumbnails"].length;
-
-    styling = blogPageStyles;
-    styleTag.insertAdjacentHTML("afterbegin", styling);
-    head.appendChild(styleTag);
 
     data["thumbnails"].forEach((x) => {
       body.style.gridTemplateRows = `${numThumbnails / 2}`;
