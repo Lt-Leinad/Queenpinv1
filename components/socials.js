@@ -72,7 +72,6 @@ class Socials extends HTMLElement {
     font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
     color: rgba(75, 75, 75);
     padding-block: 0.5em;
-
   }
 
     @media only screen and (max-width: 500px) {
@@ -89,7 +88,7 @@ class Socials extends HTMLElement {
             <ul>
                 <li class="share">Share:</li>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=${window.location}" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
-                <a href="https://twitter.com/intent/tweet?text=${document.title}&url=${window.location}" target="_blank"><li><i class="fa-brands fa-x-twitter"></i></li></a>
+                <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20blog%20post%20by%20Queen%20Pin:&url=${window.location}" target="_blank"><li><i class="fa-brands fa-x-twitter"></i></li></a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=${window.location}&title=${document.title}" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
                 <a class="clipBoardLink" title="Copy to clipboard" onclick="copyToClipBoard()" ><li><i class="fa-solid fa-paperclip"></i></li></a>
             </ul>

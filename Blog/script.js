@@ -296,6 +296,7 @@ request.then(function (response) {
         "afterBegin",
         '<i class="fa-solid fa-ellipsis-vertical"></i>'
       );
+
       shareBar.appendChild(dots);
 
       //title
@@ -321,9 +322,9 @@ const findThePost = function (thePost) {
       styleTag.insertAdjacentHTML("afterbegin", postStyles);
 
       const posts = data["posts"];
-      thePost = posts[0];
+      // thePost = posts[0];
 
-      document.title = `Queen Pin Blog | ${thePost.title}`;
+      document.title = `Queen Pin Blog - ${thePost.title}`;
 
       // topBar
       const topBar = document.createElement("div");
