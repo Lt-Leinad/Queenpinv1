@@ -267,6 +267,12 @@ class Slider extends HTMLElement {
           max-height: 400px;
         }
       }
+
+      @media only screen and (max-width: 620px) {
+        .recent, .slider-container {
+            display: none !important;
+        }
+      }
   
       </style>
       <h1 class="recent">Recent Posts: </h1>
