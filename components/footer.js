@@ -56,16 +56,16 @@ class Footer extends HTMLElement {
       <div class="footer">
         <ul>
           <li><p>Contact us:</p></li>
-          <a href="mailto:queenpinpva@gmail.com"><li><p>queenpinpva@gmail.com</p></li></a>
+          <li><a href="mailto:queenpinpva@gmail.com"><li><p>queenpinpva@gmail.com</p></a></li>
         </ul>
         <ul>
           <li><p>Follow us:</p></li>
           <li>
             <ul class="socials">
-              <a style="color: black;" href="https://pinterest.com/queenpinpva" target="_blank"><li style="color: black;"><i class="fab fa-pinterest-p"></i></li></a>
-              <a style="color: black;" href="https://www.instagram.com/queenpin.online/" target="_blank"><li style="color: black;"><i class="fab fa-instagram"></i></li></a>
-              <a style="color: black;" href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank"><li style="color: black;"><i class="fab fa-linkedin-in"></i></li></a>
-              <a style="color: black;" href="https://www.facebook.com/queenpin.va" target="_blank"><li style="color: black;"><i class="fab fa-facebook-f"></i></li></a>
+              <li><a style="color: black;" href="https://pinterest.com/queenpinpva" target="_blank" aria-label="Social Media Link"><p style="color: black;"><i class="fab fa-pinterest-p"></i></p></a></li>
+              <li><a style="color: black;" href="https://www.instagram.com/queenpin.online/" target="_blank" aria-label="Social Media Link"><p style="color: black;"><i class="fab fa-instagram"></i></p></a></li>
+              <li><a style="color: black;" href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank" aria-label="Social Media Link"><p style="color: black;"><i class="fab fa-linkedin-in"></i></p></a></li>
+              <li><a style="color: black;" href="https://www.facebook.com/queenpin.va" target="_blank" aria-label="Social Media Link"><p style="color: black;"><i class="fab fa-facebook-f"></i></p></a></li>
             </ul>
           </li>
         </ul>
@@ -74,7 +74,7 @@ class Footer extends HTMLElement {
           <a href="/components/Privacy Policy _ Queen Pin.pdf"><li><p>Privacy Policy</p></li></a>
           <li><p>All Rights Reserved</p></li>
         </ul>
-        <a href="https://danielfeddy.com"><p>Website by Daniel Feddy</p></a>
+        <a href="https://danielfeddy.com" target="_blank"><p>Website by Daniel Feddy</p></a>
       </div>
         `;
   }

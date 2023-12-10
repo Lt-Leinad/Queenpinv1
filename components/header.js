@@ -331,20 +331,19 @@ class Header extends HTMLElement {
       <hr />
       <nav class="navbar">
         <ul class="left-list">
-        <a href="/"><li class="navbar-link">Home</li></a>
-        <a href="/About"><li class="navbar-link">About</li></a>
-          <a href="/Services"><li class="navbar-link">Services</li></a>
-          <a href="/Testimonials"><li class="navbar-link">Testimonials</li></a>
-          <a href="/Blog"><li class="navbar-link">Blog</li></a>
-          <a href="/Contact"><li class="navbar-link">Contact</li></a>
-          <a href="/components/Privacy Policy _ Queen Pin.pdf" target="_blank"><li class="navbar-link">Privacy Policy</li></a>
+        <li><a href="/" class="navbar-link">Home</a></li>
+        <li><a href="/About" class="navbar-link">About</a></li>
+          <li><a href="/Services" class="navbar-link">Services</a></li>
+          <li><a href="/Testimonials" class="navbar-link">Testimonials</a></li>
+          <li><a href="/Blog" class="navbar-link">Blog</a></li>
+          <li><a href="/Contact" class="navbar-link">Contact</a></li>
         </ul>
         <ul class="right-list">
-          <a href="mailto:queenpinpva@gmail.com"><li>queenpinpva@gmail.com</li></a>
-          <a style="color: black;" href="https://pinterest.com/queenpinpva" target="_blank"><li style="color: black;"><i class="fab fa-pinterest-p"></i></li></a>
-          <a style="color: black;" href="https://www.instagram.com/queenpin.online/" target="_blank"><li style="color: black;"><i class="fab fa-instagram"></i></li></a>
-          <a style="color: black;" href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank"><li style="color: black;"><i class="fab fa-linkedin-in"></i></li></a>
-          <a style="color: black;" href="https://www.facebook.com/queenpin.va" target="_blank"><li style="color: black;"><i class="fab fa-facebook-f"></i></li></a>
+          <li><a href="mailto:queenpinpva@gmail.com" aria-label="queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
+          <li><a style="color: black;" href="https://pinterest.com/queenpinpva" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a style="color: black;" href="https://www.instagram.com/queenpin.online/" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-instagram"></i></a></li>
+          <li><a style="color: black;" href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a style="color: black;" href="https://www.facebook.com/queenpin.va" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
       </nav>
     </div>
