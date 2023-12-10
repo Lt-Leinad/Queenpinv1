@@ -22,7 +22,7 @@
     border: 1px solid rgba(75, 75, 75, 0.5);
     position: absolute !important;
     top: 50%;
-    right: 20px;
+    right: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -55,7 +55,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     font-family: lulo-clean-w01-one-bold,lulo-clean-w05-one-bold,sans-serif;
     display: flex;
