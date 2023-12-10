@@ -134,6 +134,7 @@ request.then(function (response) {
           el.setAttribute("autoplay", "");
           el.setAttribute("loop", "");
           el.setAttribute("muted", "");
+          el.setAttribute("playsinline", "");
           break;
         case "img-big":
           el = document.createElement("img");
