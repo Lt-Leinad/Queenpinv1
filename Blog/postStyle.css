@@ -97,6 +97,13 @@
     cursor: pointer;
 }
 
+.searchBar {
+    width: 90vw;
+    max-width: 750px;
+    height: 50px;
+    border: 1px solid red;
+  }
+
 .dots {
     border: none;
     background-color: transparent;

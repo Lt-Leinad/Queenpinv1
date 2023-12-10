@@ -1,6 +1,7 @@
       .body {
         width: 100vw;
-        padding-block: 20px;
+        padding-top: 80px;
+        padding-bottom: 20px;
         max-width: 1000px;
         min-width: fit-content;
         margin-inline: auto;
@@ -160,6 +161,16 @@
         }
       }
 
+      .searchBar {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 36px;
+        width: 90vw;
+        max-width: 920px;
+      }
+
       @media only screen and (max-width: 800px) {
         .body {
           display: flex;
@@ -168,7 +179,7 @@
           align-items: center;
         }
 
-        .thumbnailLink {
+        .thumbnailLink, .searchBar {
           max-width: 75%;
           width: 75%;
           min-width: 375px;
@@ -180,3 +191,9 @@
           max-height: 400px;
         }
       }
+
+      @media only screen and (max-width: 1111px) {        
+        .searchBar {
+        top: 100px;
+      }}
+
