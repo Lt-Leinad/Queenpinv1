@@ -78,7 +78,6 @@ request.then(function (response) {
           el.src = `/Posts/PostsData/images/${thePost.orderOfContent[i]}`;
           el.setAttribute("autoplay", "");
           el.setAttribute("loop", "");
-          el.setAttribute("controls", "");
           el.setAttribute("muted", "");
           break;
         case "img-big":
