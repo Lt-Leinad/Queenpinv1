@@ -4,6 +4,12 @@ request.then(function (response) {
     const posts = data["posts"];
     thePost = posts[0];
     const body = document.querySelector(".body");
+    const slider = document.createElement("div");
+    slider.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="blog-slider">
+    </div>`
+    );
 
     document.title = `Queen Pin Blog - ${thePost.title}`;
 

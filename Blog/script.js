@@ -341,10 +341,7 @@ request.then(function (response) {
       //dots
       const dots = document.createElement("button");
       dots.classList.add("dots");
-      dots.insertAdjacentHTML(
-        "afterBegin",
-        '<i class="fa-solid fa-ellipsis-vertical"></i>'
-      );
+      dots.insertAdjacentHTML("afterBegin", "");
 
       shareBar.appendChild(dots);
 

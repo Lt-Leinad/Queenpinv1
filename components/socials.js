@@ -43,7 +43,7 @@ class Socials extends HTMLElement {
         align-items: center;
     }
 
-    .blog-socials ul a:hover, .blog-socials ul li:hover {
+    .blog-socials ul a:hover, .blog-socials ul li:not(.share):hover {
         cursor: pointer;
         color: rgb(151,210,227);
     }
