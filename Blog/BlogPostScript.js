@@ -16,7 +16,7 @@ request.then(function (response) {
   response.json().then(function (data) {
     const posts = data["posts"];
     let postArr = posts.map((x, i) =>
-      console.log(x.title.toLowerCase() == title.toLowerCase())
+      console.log(x.title.toLowerCase(), title.toLowerCase())
     );
     let thePost = posts[postArr.indexOf(true)];
     const body = document.querySelector(".body");
