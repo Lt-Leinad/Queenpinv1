@@ -1,6 +1,7 @@
 let title;
 try {
   const request2 = fetch("/Blog/Posts/PostData.json");
+
   request2.then(function (response2) {
     response2.json().then(function (data2) {
       title = document.URL.slice(
@@ -11,7 +12,12 @@ try {
         .join(" ");
     });
   });
+} catch (error) {
+  console.log("There was an error", error);
+  alert("Sorry, something went wrong. Please refresh your page.");
+}
 
+try {
   const request = fetch("/Posts/PostsData/Posts.json");
   request.then(function (response) {
     response.json().then(function (data) {
