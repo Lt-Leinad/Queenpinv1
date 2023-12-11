@@ -734,8 +734,17 @@ a {
     transform: rotateZ(180deg);
 }
 
+.section {
+    transition-duration: 1.5s;
+}
+
 .display-none {
     display: none;
+}
+
+.section--hidden {
+    opacity: 0;
+    margin-top: 10rem;
 }
 
 @media only screen and (max-width: 800px) or (max-height: 650px) {
