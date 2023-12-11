@@ -16,9 +16,7 @@ request.then(function (response) {
   response.json().then(function (data) {
     const posts = data["posts"];
     let postArr = posts.map((x, i) => x.title == title);
-    let postArrTrue = posts.filter((x, i) => x.title == title);
     let thePost = posts[postArr.indexOf(true)];
-    console.log(thePost);
     const body = document.querySelector(".body");
 
     document.title = `Queen Pin Blog - ${thePost.title}`;
