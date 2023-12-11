@@ -20,7 +20,7 @@ request.then(function (response) {
     thePost = posts[postArr.indexOf(true)];
     const body = document.querySelector(".body");
 
-    document.title = `Queen Pin Blog - ${thePost.title}`;
+    // document.title = `Queen Pin Blog - ${thePost.title}`;
 
     // topBar
     const topBar = document.createElement("div");
