@@ -3,7 +3,7 @@ const request2 = fetch("/Blog/Posts/PostData.json");
 request2.then(function (response2) {
   response2.json().then(function (data2) {
     title = document.URL.slice(
-      document.URL.indexOf("/blogposts/"),
+      document.URL.indexOf("/blogposts/") - 11,
       document.URL.length - 1
     )
       .split("%20")
