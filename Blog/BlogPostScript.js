@@ -1,4 +1,4 @@
-let title;
+let title, thePost;
 const request2 = fetch("/Blog/Posts/PostData.json");
 request2.then(function (response2) {
   response2.json().then(function (data2) {
