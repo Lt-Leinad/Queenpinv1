@@ -349,7 +349,7 @@ class Header extends HTMLElement {
     </div>
     <div class="header-mob">
       <img id="logo" src="/photos/QueenpinLogo.webp" alt="Queenpin Logo" />
-      <button class="hamburger" onclick="menuFunc()"><i class="fa-solid fa-bars"></i></button>
+      <button class="hamburger" onclick="menuFunc()" aria-label="Menu Button"><i class="fa-solid fa-bars"></i></button>
     </div>
       `;
   }
