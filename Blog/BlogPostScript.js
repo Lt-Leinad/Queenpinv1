@@ -18,11 +18,11 @@ request.then(function (response) {
     let postArr = posts.map(
       (x, i) => x.title.toLowerCase() == title.toLowerCase()
     );
+    let thePost = posts[postArr.indexOf(true)];
 
     if (!thePost) {
       alert("Sorry, something went wrong. Please refresh your page.");
     }
-    let thePost = posts[postArr.indexOf(true)];
     const body = document.querySelector(".body");
     document.title = `Queen Pin Blog - ${thePost.title}`;
 
