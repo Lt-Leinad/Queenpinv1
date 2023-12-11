@@ -93,6 +93,9 @@
       .author {
         font-size: 14px;
         font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
       }
 
       .times {
