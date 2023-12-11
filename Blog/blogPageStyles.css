@@ -43,6 +43,7 @@
 
       .thumbnail-pic {
         width: 100%;
+        aspect-ratio: 454/255;
         max-height: 250px;
         object-fit: contain;
       }
