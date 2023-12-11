@@ -99,6 +99,7 @@ font-display: block;
 
 .body img {
     width: 100vw;
+    height: auto;
     max-width: 1000px;
 }
 
