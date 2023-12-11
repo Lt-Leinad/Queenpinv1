@@ -339,7 +339,7 @@ class Header extends HTMLElement {
           <li><a href="/Contact" class="navbar-link" aria-label="Contact Page Link">Contact</a></li>
         </ul>
         <ul class="right-list">
-          <li><a href="mailto:queenpinpva@gmail.com" aria-label="queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
+          <li><a href="mailto:queenpinpva@gmail.com" aria-label="Email Link to queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>
           <li><a style="color: black;" href="https://pinterest.com/queenpinpva" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-pinterest-p"></i></a></li>
           <li><a style="color: black;" href="https://www.instagram.com/queenpin.online/" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-instagram"></i></a></li>
           <li><a style="color: black;" href="https://www.linkedin.com/in/devorah-gurevich/" target="_blank" aria-label="Social Media Link" style="color: black;"><i class="fab fa-linkedin-in"></i></a></li>

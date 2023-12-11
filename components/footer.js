@@ -71,7 +71,7 @@ class Footer extends HTMLElement {
         </ul>
         <ul>
           <li><p>Pinterest Management Services</p></li>
-          <a href="/components/Privacy Policy _ Queen Pin.pdf"><li><p>Privacy Policy</p></li></a>
+          <li><a href="/components/Privacy Policy _ Queen Pin.pdf"><p>Privacy Policy</p></a></li>
           <li><p>All Rights Reserved</p></li>
         </ul>
         <a href="https://danielfeddy.com" target="_blank"><p>Website by Daniel Feddy</p></a>

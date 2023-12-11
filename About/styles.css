@@ -99,7 +99,7 @@ font-display: block;
 
 .body img {
     width: 100vw;
-    height: auto;
+    aspect-ratio: 1365/1079;
     max-width: 1000px;
 }
 
