@@ -18,7 +18,7 @@ request.then(function (response) {
     let postArr = posts.map((x, i) => x.title == title);
     let thePost = posts[postArr.indexOf(true)];
     const body = document.querySelector(".body");
-
+    console.log(posts, postArr, thePost);
     document.title = `Queen Pin Blog - ${thePost.title}`;
 
     // topBar
