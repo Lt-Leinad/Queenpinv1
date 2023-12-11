@@ -33,7 +33,7 @@
       .thumbnailLink:hover {
         cursor: pointer;
         border-bottom: 1px solid transparent;
-        outline: 3px solid rgb(242,162,171);
+        outline: 3px solid transparent;
       }
 
       .thumbnail {
