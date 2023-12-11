@@ -3,7 +3,7 @@ const request2 = fetch("/Blog/Posts/PostData.json");
 request2.then(function (response2) {
   response2.json().then(function (data2) {
     title = document.URL.slice(
-      document.URL.indexOf("/BlogPosts/") + 11,
+      document.URL.indexOf("/blogposts/") + 11,
       document.URL.length - 1
     )
       .split("%20")
@@ -18,9 +18,10 @@ request.then(function (response) {
     let postArr = posts.map((x, i) => x.title == title);
     let postArrTrue = posts.filter((x, i) => x.title == title);
     thePost = posts[postArr.indexOf(true)];
+    console.log(thePost);
     const body = document.querySelector(".body");
 
-    // document.title = `Queen Pin Blog - ${thePost.title}`;
+    document.title = `Queen Pin Blog - ${thePost.title}`;
 
     // topBar
     const topBar = document.createElement("div");
