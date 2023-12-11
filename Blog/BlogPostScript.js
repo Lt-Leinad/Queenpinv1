@@ -19,7 +19,6 @@ request.then(function (response) {
       (x, i) => x.title.toLowerCase() == title.toLowerCase()
     );
     let thePost = posts[postArr.indexOf(true)];
-    console.log(postArr, thePost);
     const body = document.querySelector(".body");
     document.title = `Queen Pin Blog - ${thePost.title}`;
 
