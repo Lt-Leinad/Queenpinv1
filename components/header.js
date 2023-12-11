@@ -331,12 +331,12 @@ class Header extends HTMLElement {
       <hr />
       <nav class="navbar">
         <ul class="left-list">
-          <li><a href="/" class="navbar-link">Home</a></li>
-          <li><a href="/About" class="navbar-link">About</a></li>
-          <li><a href="/Services" class="navbar-link">Services</a></li>
-          <li><a href="/Testimonials" class="navbar-link">Testimonials</a></li>
-          <li><a href="/Blog" class="navbar-link">Blog</a></li>
-          <li><a href="/Contact" class="navbar-link">Contact</a></li>
+          <li><a href="/" class="navbar-link" aria-label="Home Page Link">Home</a></li>
+          <li><a href="/About" class="navbar-link" aria-label="About Page Link">About</a></li>
+          <li><a href="/Services" class="navbar-link" aria-label="Services Page Link">Services</a></li>
+          <li><a href="/Testimonials" class="navbar-link" aria-label="Testimonials Page Link">Testimonials</a></li>
+          <li><a href="/Blog" class="navbar-link" aria-label="Blog Page Link">Blog</a></li>
+          <li><a href="/Contact" class="navbar-link" aria-label="Contact Page Link">Contact</a></li>
         </ul>
         <ul class="right-list">
           <li><a href="mailto:queenpinpva@gmail.com" aria-label="queenpinpva@gmail.com">queenpinpva@gmail.com</a></li>

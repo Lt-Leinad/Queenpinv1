@@ -56,7 +56,7 @@ class Footer extends HTMLElement {
       <div class="footer">
         <ul>
           <li><p>Contact us:</p></li>
-          <li><a href="mailto:queenpinpva@gmail.com"><li><p>queenpinpva@gmail.com</p></a></li>
+          <li><a href="mailto:queenpinpva@gmail.com" aria-label="Email Link to queenpinpva@gmail.com"><li><p>queenpinpva@gmail.com</p></a></li>
         </ul>
         <ul>
           <li><p>Follow us:</p></li>
