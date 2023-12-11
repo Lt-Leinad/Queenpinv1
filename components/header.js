@@ -331,8 +331,8 @@ class Header extends HTMLElement {
       <hr />
       <nav class="navbar">
         <ul class="left-list">
-        <li><a href="/" class="navbar-link">Home</a></li>
-        <li><a href="/About" class="navbar-link">About</a></li>
+          <li><a href="/" class="navbar-link">Home</a></li>
+          <li><a href="/About" class="navbar-link">About</a></li>
           <li><a href="/Services" class="navbar-link">Services</a></li>
           <li><a href="/Testimonials" class="navbar-link">Testimonials</a></li>
           <li><a href="/Blog" class="navbar-link">Blog</a></li>
