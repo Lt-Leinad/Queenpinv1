@@ -35,7 +35,7 @@ class Socials extends HTMLElement {
         list-style: none;
     }
 
-    .blog-socials ul li, .blog-socials ul li a {
+    .blog-socials ul li a, .blog-socials ul li a {
         color: rgba(75, 75, 75, 1);
         transition-duration: 250ms;
         height: 100%;
@@ -43,7 +43,7 @@ class Socials extends HTMLElement {
         align-items: center;
     }
 
-    .blog-socials ul a:hover, .blog-socials ul li:not(.share):hover {
+    .blog-socials ul li a:hover, .blog-socials ul li a:not(.share):hover {
         cursor: pointer;
         color: rgb(151,210,227);
     }
@@ -87,10 +87,10 @@ class Socials extends HTMLElement {
         <a class="socials-contact" href="/Contact"><button>Contact Us</button></a>
             <ul>
                 <li class="share">Share:</li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=${window.location}" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
-                <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20blog%20post%20by%20Queen%20Pin:&url=${window.location}" target="_blank"><li><i class="fa-brands fa-x-twitter"></i></li></a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=${window.location}&title=${document.title}" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
-                <a class="clipBoardLink" title="Copy to clipboard" onclick="copyToClipBoard()" ><li><i class="fa-solid fa-paperclip"></i></li></a>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=${window.location}" target="_blank" aria-label="Share Post on Social Media Link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20blog%20post%20by%20Queen%20Pin:&url=${window.location}" target="_blank" aria-label="Share Post on Social Media Link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=${window.location}&title=${document.title}" target="_blank" aria-label="Share Post on Social Media Link"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a class="clipBoardLink" title="Copy to clipboard" onclick="copyToClipBoard()"  aria-label="Share Post on Social Media Link"><i class="fa-solid fa-paperclip"></i></a></li>
             </ul>
         </div>
           `;
