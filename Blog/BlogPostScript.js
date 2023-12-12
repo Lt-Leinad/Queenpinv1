@@ -1,19 +1,16 @@
-let title, body;
-
 (function writePost() {
-  (function init() {
-    const request2 = fetch("/Blog/Posts/PostData.json");
-    request2.then(function (response2) {
-      response2.json().then(function (data2) {
-        title = document.URL.slice(
-          document.URL.toLowerCase().indexOf("/blogposts/") + 11,
-          document.URL.length - 1
-        )
-          .split("%20")
-          .join(" ");
-      });
+  let title, body;
+  const request2 = fetch("/Blog/Posts/PostData.json");
+  request2.then(function (response2) {
+    response2.json().then(function (data2) {
+      title = document.URL.slice(
+        document.URL.toLowerCase().indexOf("/blogposts/") + 11,
+        document.URL.length - 1
+      )
+        .split("%20")
+        .join(" ");
     });
-  })();
+  });
   const request = fetch("/Posts/PostsData/Posts.json");
   request.then(function (response) {
     response.json().then(function (data) {
