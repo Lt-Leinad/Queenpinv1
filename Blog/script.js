@@ -69,31 +69,33 @@ const searchDesktopFunc = function (e) {
   }
 };
 
-const request = fetch("/Blog/Posts/PostData.json");
-request.then(function (response) {
-  response.json().then(function (data) {
+const request = fetch("/Blog/Posts/PostData.json")
+  .then(async (response) => {
+    if (!response.ok) {
+      throw new Error("Error in request");
+    }
+    const data = await response.json();
     const numThumbnails = data["thumbnails"].length;
-
     data["thumbnails"].forEach((x) => {
       body.style.gridTemplateRows = `${numThumbnails / 2}`;
 
       thumbnailLink = document.createElement("a");
       thumbnailArr.push(thumbnailLink);
 
-      const postLink = function (e) {
+      const postLink = function (e_1) {
         const request2 = fetch("/Blog/Posts/PostData.json");
         request2.then(function (response2) {
           response2.json().then(function (data2) {
-            Object.keys(data2).forEach((x, i) => {
-              cur = e.target;
+            Object.keys(data2).forEach((x_1, i) => {
+              cur = e_1.target;
               while (!cur.classList.contains("body")) {
                 cur = cur.parentElement;
               }
               thumbnailArr = [];
-              [...cur.children].forEach((y, i) => {
-                thumbnailArr.push(isDescendant(y, e.target));
+              [...cur.children].forEach((y, i_1) => {
+                thumbnailArr.push(isDescendant(y, e_1.target));
               });
-              thumbnailArr.forEach((z, i) => {
+              thumbnailArr.forEach((z, i_2) => {
                 z ? (index = thumbnailArr.indexOf(z)) : null;
               });
               window.location = `BlogPosts/${data2.thumbnails[index].title}`;
@@ -181,8 +183,10 @@ request.then(function (response) {
       snippet.insertAdjacentHTML("afterBegin", x["snippet"]);
       text.appendChild(snippet);
     });
+  })
+  .catch((error) => {
+    console.error("An error occurred:", error);
   });
-});
 
 window.addEventListener("load", function () {
   searchBarInput.value = "";

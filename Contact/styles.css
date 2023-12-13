@@ -12,6 +12,22 @@
     --spacer: 80px;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-name: fade-in;
+}
+
 @font-face {
     font-family: "Helvetica-W02-Roman";
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix");
