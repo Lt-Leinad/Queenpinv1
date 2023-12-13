@@ -14,7 +14,7 @@ const reqFunc2 = fetch("/Blog/Posts/PostData.json")
       .join(" ");
   })
   .catch((error) => {
-    console.error("An error occurred:", error);
+    window.location.reload();
   });
 
 const reqFunc = fetch("/Posts/PostsData/Posts.json")
@@ -186,5 +186,5 @@ const reqFunc = fetch("/Posts/PostsData/Posts.json")
     body.appendChild(document.createElement("footer-component"));
   })
   .catch((error) => {
-    console.error("An error occurred:", error);
+    window.location.reload();
   });

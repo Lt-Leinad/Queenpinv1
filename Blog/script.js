@@ -185,7 +185,7 @@ const request = fetch("/Blog/Posts/PostData.json")
     });
   })
   .catch((error) => {
-    console.error("An error occurred:", error);
+    window.location.reload();
   });
 
 window.addEventListener("load", function () {
