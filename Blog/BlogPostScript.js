@@ -1,4 +1,5 @@
 let title, body;
+// const fs = require("fs");
 
 const reqFunc2 = fetch("/Blog/Posts/PostData.json")
   .then(async (response2) => {
@@ -183,8 +184,10 @@ const reqFunc = fetch("/Posts/PostsData/Posts.json")
       body.appendChild(el);
     });
     body.appendChild(document.createElement("socials-component"));
-    body.appendChild(document.createElement("footer-component"));
   })
   .catch((error) => {
     window.location.reload();
   });
+
+// const html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Queen Pin - Pinterest Management Services - Blog"/><link rel="stylesheet" type="text/css" href="/Blog/postStyle.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/><link rel="icon" type="image/x-icon" href="/photos/favicon.ico" /><title>Queen Pin Blog</title></head><body><menu-component></menu-component><header-component></header-component><div class="body"></div><script src="https://kit.fontawesome.com/5d743bbd3f.js" crossorigin="anonymous" async></script><script src="/Posts/PostsData/Posts.json" type="text/json" async></script><script src="/Blog/BlogPostScript.js" async></script><script src="/components/header.js" type="text/javascript" async></script><script src="/components/footer.js" type="text/javascript" async></script><script src="/components/menu.js" async></script><script src="/components/socials.js" async></script><script src="/components/slider.js" async></script></body></html>'
+// fs.writeFileSync(`Blog/BlogPosts/${}`, html)
